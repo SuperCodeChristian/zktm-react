@@ -30,7 +30,7 @@ span {
   padding-right:16px;
 }
 strong {
-  color: red;
+  color: white;
 }
 form {
   background-color: #6ba8a9;
@@ -40,4 +40,12 @@ form {
 }
 .output {
   background-color: #1d4d4f;
+}
+.msg {
+  padding: 16px 0;
+  background-color: maroon;
+  font-weight: bold;
+}
+.msg:empty {
+  padding: 0;
 }

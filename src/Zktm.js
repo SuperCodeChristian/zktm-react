@@ -66,12 +66,12 @@ class Zktm extends React.Component {
                         <input type="radio" name="radio" id="bTwo" checked={!this.state.isBefore} value="buttonTwo" onChange={this.handleRadio} />
                     </p>
                 </section>
-                <strong>{this.state.msg}</strong>
+                <p className="msg">{this.state.msg}</p>
                 <section className="output">
                     <h3>Vorderer Teil</h3>
-                    <p>{this.state.front}</p>
+                    <p><strong>{this.state.front}</strong></p>
                     <h3>Hinterer Teil</h3>
-                    <p>{this.state.back}</p>
+                    <p><strong>{this.state.back}</strong></p>
                 </section>
             </div>
         );
