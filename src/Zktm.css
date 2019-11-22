@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section, form {
+  padding: 16px;
+  text-align: center;
+}
+span {
+  padding-right:16px;
+}
