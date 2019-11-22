@@ -28,7 +28,7 @@ class Zktm extends React.Component {
 
         let pos = this.state.string.search(this.state.cutby);
         if (pos === -1) {
-            this.setState({msg: 'Zeichenkette nicht vorhanden!'})
+            this.setState({msg: 'Zeichenkette nicht gefunden!'})
             return;
         } else {
             this.setState({msg: ''})
@@ -52,13 +52,13 @@ class Zktm extends React.Component {
                         value={this.state.string}
                         onChange={this.handleChange}>
                     </input>
-                    <p><label>Zu trennende Zeichenkette:</label></p>
+                    <p><label>Zeichenkette für die Trennung:</label></p>
                     <input type="text" name="cutby" id="cutby" required
                         value={this.state.cutby}
                         onChange={this.handleChange}>
                     </input>
                 </form>
-                <section>
+                <section className="radios">
                     <p><span>Trennung davor</span>
                         <input type="radio" name="radio" checked={this.state.isBefore} id="buttonOne" value="buttonOne" onChange={this.handleRadio} />
                     </p>
@@ -67,7 +67,7 @@ class Zktm extends React.Component {
                     </p>
                 </section>
                 <strong>{this.state.msg}</strong>
-                <section>
+                <section className="output">
                     <h3>Vorderer Teil</h3>
                     <p>{this.state.front}</p>
                     <h3>Hinterer Teil</h3>
